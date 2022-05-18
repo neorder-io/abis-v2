@@ -518,6 +518,11 @@
             "internalType": "uint256",
             "name": "rewardWithdrawed",
             "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tag",
+            "type": "uint256"
           }
         ],
         "internalType": "struct Lottery.LotteryInfo[]",
@@ -637,6 +642,11 @@
           {
             "internalType": "uint256",
             "name": "rewardWithdrawed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tag",
             "type": "uint256"
           }
         ],
@@ -1075,6 +1085,11 @@
         "internalType": "uint256",
         "name": "_rewardReleaseHours",
         "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tailOrderRange",
+        "type": "uint256"
       }
     ],
     "name": "setConfig",
@@ -1152,6 +1167,11 @@
   {
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "_tailRewardRate",
+        "type": "uint256"
+      },
+      {
         "internalType": "uint256[]",
         "name": "_rewardRates",
         "type": "uint256[]"
@@ -1196,6 +1216,32 @@
     "name": "setVRFConfig",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tailOrderRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tailRewardRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
