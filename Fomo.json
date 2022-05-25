@@ -378,7 +378,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Lottery.OrderInfo",
+        "internalType": "struct Fomo.OrderInfo",
         "name": "",
         "type": "tuple"
       }
@@ -439,7 +439,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Lottery.OrderInfo[]",
+        "internalType": "struct Fomo.OrderInfo[]",
         "name": "",
         "type": "tuple[]"
       }
@@ -525,7 +525,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Lottery.LotteryInfo[]",
+        "internalType": "struct Fomo.LotteryInfo[]",
         "name": "",
         "type": "tuple[]"
       }
@@ -650,7 +650,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Lottery.LotteryInfo",
+        "internalType": "struct Fomo.LotteryInfo",
         "name": "_lottery",
         "type": "tuple"
       }

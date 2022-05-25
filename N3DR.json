@@ -10,6 +10,11 @@
         "internalType": "string",
         "name": "symbol_",
         "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalSupply_",
+        "type": "uint256"
       }
     ],
     "stateMutability": "nonpayable",
@@ -134,7 +139,7 @@
   },
   {
     "inputs": [],
-    "name": "addressBurn",
+    "name": "addressFomo",
     "outputs": [
       {
         "internalType": "address",
@@ -147,20 +152,7 @@
   },
   {
     "inputs": [],
-    "name": "addressFarm",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "addressLottery",
+    "name": "addressNFT",
     "outputs": [
       {
         "internalType": "address",
@@ -174,6 +166,19 @@
   {
     "inputs": [],
     "name": "addressReferral",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "addressTreasury",
     "outputs": [
       {
         "internalType": "address",
@@ -395,43 +400,6 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "lastBuyTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "account",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
-      }
-    ],
-    "name": "mint",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
     "inputs": [],
     "name": "name",
     "outputs": [
@@ -625,19 +593,6 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "sellAfterBuySeconds",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [
       {
         "internalType": "string",
@@ -715,11 +670,6 @@
         "internalType": "uint256",
         "name": "_priceProtectionRate",
         "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_sellAfterBuySeconds",
-        "type": "uint256"
       }
     ],
     "name": "setPriceProtection",
@@ -767,17 +717,17 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "burn_",
+        "name": "_treasury",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "_farm",
+        "name": "_nft",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "_lottery",
+        "name": "_fomo",
         "type": "address"
       },
       {
@@ -831,17 +781,17 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "burn_",
+        "name": "_treasury",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_farm",
+        "name": "_nft",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_lottery",
+        "name": "_fomo",
         "type": "uint256"
       },
       {
@@ -902,11 +852,6 @@
         "internalType": "bool",
         "name": "_buyLock",
         "type": "bool"
-      },
-      {
-        "internalType": "bool",
-        "name": "_sellLock",
-        "type": "bool"
       }
     ],
     "name": "setWhitelistLock",
@@ -929,7 +874,7 @@
   },
   {
     "inputs": [],
-    "name": "taxBurn",
+    "name": "taxFomo",
     "outputs": [
       {
         "internalType": "uint256",
@@ -942,20 +887,7 @@
   },
   {
     "inputs": [],
-    "name": "taxFarm",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "taxLottery",
+    "name": "taxNFT",
     "outputs": [
       {
         "internalType": "uint256",
@@ -982,6 +914,19 @@
   {
     "inputs": [],
     "name": "taxReferral",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "taxTreasury",
     "outputs": [
       {
         "internalType": "uint256",

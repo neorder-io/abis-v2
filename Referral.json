@@ -104,6 +104,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "fomo",
+    "outputs": [
+      {
+        "internalType": "contract IFomo",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "address",
@@ -219,19 +232,6 @@
     "outputs": [
       {
         "internalType": "contract IHelper",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "lottery",
-    "outputs": [
-      {
-        "internalType": "contract ILottery",
         "name": "",
         "type": "address"
       }
@@ -463,7 +463,7 @@
       },
       {
         "internalType": "address",
-        "name": "_lottery",
+        "name": "_fomo",
         "type": "address"
       },
       {
